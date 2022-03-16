@@ -33,5 +33,44 @@ You can return the answer in any order.
 
 
 
+##Working on this Repo
+__get the code__ (default branch is main)
+```
+git clone git@github.com:fistralpro/leetcode-solutions.git
+cd leetcode-solutions
+```  
+or, __update current code__
+```
+cd leetcode-solutions
+git checkout main
+git pull
+```
 
+__create a feature branch and push it back for visibility__ (example branch feature/add-two-numbers)
+```
+git branch feature/add-two-numbers
+git push origin feature/add-two-numbers
+```
+
+__do some code and commit your changes locally__ (we'll add all new files with .)
+```
+git add .
+git commit -m "my description of work done"
+```
+
+__push your changes to the remote__
+```
+git push origin feature/add-two-numbers
+```
+
+On successful testing they will be merged to main and then main tagged.  The branch will then be deleted.
+It is recommended you then pull down that change and delete your local branch.  
+__see which branches have been deleted__
+```
+git fetch -p
+```
+__now lets delete our feature/add-two-numbers branch that is still local__
+```
+git branch -d feature/add-two-numbers
+```
 
